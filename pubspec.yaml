@@ -1,0 +1,88 @@
+name: disaster_network
+description: Emergency Disaster Network - Offline mesh communication for disasters
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # Database
+  drift: ^2.22.1
+  sqlite3_flutter_libs: ^0.5.28
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Location
+  geolocator: ^13.0.2
+
+  # Maps
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Networking / Mesh
+  bridgefy: ^1.1.11
+  nearby_connections: ^4.3.0
+
+  # Crypto
+  pointycastle: ^3.9.1
+  uuid: ^4.5.1
+
+  # UI
+  flutter_animate: ^4.5.2
+  google_fonts: ^6.2.1
+  shimmer: ^3.0.0
+
+  # Notifications
+  flutter_local_notifications: ^18.0.1
+
+  # Permissions
+  permission_handler: ^11.3.1
+
+  # Utils
+  intl: ^0.19.0
+  equatable: ^2.0.7
+  collection: ^1.19.1
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  drift_dev: ^2.22.1
+  build_runner: ^2.4.14
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/sounds/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Inter-ExtraBold.ttf
+          weight: 800
